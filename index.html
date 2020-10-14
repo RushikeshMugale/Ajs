@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fassion Hub</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: gray;
+            }
+            * {
+            box-sizing: border-box;
+            }
+
+            .column {
+            float: left;
+            width: 25%;
+            padding: 5px;
+            }
+           
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+            }
+            .myDivHead {
+                border: 5px outset red;
+                background-color: purple;    
+                text-align: center;
+            }
+            .myDivS {
+                border: 5px outset yellow;
+                background-color: lightblue;    
+                text-align: center;
+            }
+            .myDivH,.myDivShoes {
+                border: 5px outset black;
+                background-color: lightblue;    
+                text-align: center;
+            }
+            .myDivBottom {
+                border: 5px outset pink;
+                background-color: gray;    
+                text-align: center;
+            }
+            .block {
+                display: block;
+                width: 82%;
+                border: none;
+                background-color: #4CAF50;
+                padding: 14px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+            }
+            .block1 {
+                display: block;
+                width: 50%;
+                border: none;
+                background-color: #4CAF50;
+                padding: 12px 28px;
+                font-size: 16px;
+                cursor: pointer;
+                text-align: center;
+                margin-left: 25%;
+            }
+            
+        </style>
+    </head>
+    
+    <body ng-app="">
+        <div class="myDivHead">
+            <p>
+             <h1>Welcome To Fassion Hub</h1>
+             <h5>Get your best here</h5>
+            </p>
+        </div>
+        <div>
+            <div class="myDivS"><p style="text-align:centre"><h4>Shirts</h4></p></div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0055.jpg" alt="allen solly" width="300" height="300">
+                        <h5>Price:$650</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0056.jpg" alt="allen solly" width="300" height="300">
+                        <h5>Price:$650</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0057.jpg" alt="allen solly" width="300" height="300">
+                        <h5>Price:$650</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0058.jpg" alt="allen solly" width="300" height="300">
+                        <h5>Price:$650</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                </div>    
+            </div> 
+            <div class="myDivH"><p style="text-align:centre"><h4>Huddy</h4></p></div>
+            <div class="row">
+                <div class="column">
+                    <img src="images/IMG-20200930-WA0119.jpg" alt="allen solly" width="300" height="300">
+                    <h5>Price:$800</h5>
+                    <button  type="button" class="block">Add To Cart</button>
+                </div>
+                <div class="column">
+                    <img src="images/IMG-20200930-WA0120.jpg" alt="allen solly" width="300" height="300">
+                    <h5>Price:$800</h5>
+                    <button  type="button" class="block">Add To Cart</button>
+                </div>
+                <div class="column">
+                    <img src="images/IMG-20200930-WA0121.jpg" alt="allen solly" width="300" height="300">
+                    <h5>Price:$800</h5>
+                    <button  type="button" class="block">Add To Cart</button>
+                </div>
+                <div class="column">
+                    <img src="images/IMG-20200930-WA0122.jpg" alt="allen solly" width="300" height="300">
+                    <h5>Price:$800</h5>
+                    <button  type="button" class="block">Add To Cart</button>
+                </div>
+            </div>
+            <div class="myDivShoes"><p style="text-align:centre"><h4>Footware</h4></p></div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0096.jpg" alt="Tommy Wilfiger" width="300" height="300">
+                        <h5>Price:$750</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0041.jpg" alt="Pumma" width="300" height="300">
+                        <h5>Price:$550</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0069.jpg" alt="Pumma" width="300" height="300">
+                        <h5>Price:$850</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0100.jpg" alt="Nike" width="300" height="300">
+                        <h5>Price:$550</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                </div>    
+            </div>     
+
+            <div class="myDivBags"><p style="text-align:centre"><h4>Bags</h4></p></div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0034.jpg" alt="Pumma" width="300" height="300">
+                        <h5>Price:$750</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0035.jpg" alt="Fifla" width="300" height="300">
+                        <h5>Price:$750</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0036.jpg" alt="Tommy Wilfiger" width="300" height="300">
+                        <h5>Price:$750</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                    <div class="column">
+                        <img src="images/IMG-20200930-WA0037.jpg" alt="Nike" width="300" height="300">
+                        <h5>Price:$750</h5>
+                        <button  type="button" class="block" onclick="alert('Product  added')">Add To Cart</button>
+                    </div>
+                </div>    
+            </div> 
+        </div>
+
+        <div class="myDivBottom">
+            <a href="checkout.html" target="_self">
+             <h2><button type="button" class="block1" >Checkout</button></h2>
+            </a>
+            </div>
+    </body>
+</html>
